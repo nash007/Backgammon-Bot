@@ -1,0 +1,14 @@
+1) We have created a 2 level deep k-ary search tree for easier access. (Ref - http://blog.mozilla.org/nnethercote/files/2012/03/IMG_1553.jpg )
+2) An interesting scoring strategy has been used by us. 
+ * Each of our checker in the bar gives us a score of -25. 
+ * Also, a scoring scheme has been put in place for the current position of the checkers on the board (How close they are to the goal, etc.). 
+ * A single checker (of ours) gives a -15. 
+ * The exact opposite (as in the values multiplied by -1) has been done for the opponent.
+ * Getting out of the bar fetches us extra points while the opponent doing the same leads to negative points.
+
+The above factors help us determine the heuristics value for each possible move on the next play and hence decide using the 2-depth search (expectimax algorithm) as to which checker to move.
+
+Thanking You.
+
+Regards,
+Mohit & Nishant (we the APEX B| )
